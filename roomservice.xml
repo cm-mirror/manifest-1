@@ -24,11 +24,15 @@
 
 		<remove-project name="CyanogenMod/android_frameworks_opt_telephony" />
 		<project name="ArchiDroid/android_frameworks_opt_telephony" path="frameworks/opt/telephony" remote="github" />
+        
+        <remove-project groups="pdk,tradefed" name="CyanogenMod/android_build" path="build" />
+        <project name="ArchiDroid/android_build" path="build" remote="github" />
+        
 	<!-- /Replaced projects -->
 
 	<!-- Devices -->
-		<!-- i9300 -->
-			<project name="CyanogenMod/android_device_samsung_i9300" path="device/samsung/i9300" remote="github" />
+		<!-- i9305 -->
+			<project name="CyanogenMod/android_device_samsung_i9305" path="device/samsung/i9305" remote="github" />
 			<project name="CyanogenMod/android_device_samsung_smdk4412-common" path="device/samsung/smdk4412-common" remote="github" />
 			<project name="CyanogenMod/android_kernel_samsung_smdk4412" path="kernel/samsung/smdk4412" remote="github" />
 			<project name="CyanogenMod/android_packages_apps_SamsungServiceMode" path="packages/apps/SamsungServiceMode" remote="github" />
@@ -38,14 +42,14 @@
 			<project name="ArchiDroid/proprietary_vendor_samsung" path="vendor/samsung" remote="github" />
 
 
-			<remove-project name="CyanogenMod/android_device_samsung_i9300" />
-			<project name="ArchiDroid/android_device_samsung_i9300" path="device/samsung/i9300" remote="github" />
+			<remove-project name="CyanogenMod/android_device_samsung_i9305" />
+			<project name="rodman01/android_device_samsung_i9305" path="device/samsung/i9305" remote="github" />
 
 			<remove-project name="CyanogenMod/android_device_samsung_smdk4412-common" />
-			<project name="ArchiDroid/android_device_samsung_smdk4412-common" path="device/samsung/smdk4412-common" remote="github" />
+			<project name="rodman01/android_device_samsung_smdk4412-common" path="device/samsung/smdk4412-common" remote="github" />
 
 			<remove-project name="CyanogenMod/android_kernel_samsung_smdk4412" />
-			<project name="ArchiDroid/android_kernel_samsung_smdk4412" path="kernel/samsung/smdk4412" remote="github" />
+			<project name="rodman01/android_kernel_samsung_smdk4412" path="kernel/samsung/smdk4412" remote="github" />
 
 			<remove-project name="CyanogenMod/android_packages_apps_SamsungServiceMode" />
 			<project name="CyanogenMod/android_packages_apps_SamsungServiceMode" path="packages/apps/SamsungServiceMode" remote="github" revision="cm-11.0" />
@@ -55,6 +59,6 @@
 
 			<remove-project name="CyanogenMod/android_hardware_samsung_slsi_exynos4" />
 			<project name="ArchiDroid/android_hardware_samsung_slsi_exynos4" path="hardware/samsung_slsi/exynos4" remote="github" />
-		<!-- /i9300 -->
+		<!-- /i9305 -->
 	<!-- /Devices -->
 </manifest>
